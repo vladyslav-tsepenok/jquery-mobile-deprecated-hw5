@@ -78,8 +78,55 @@
         //======================================
     </div>
 
+    <div data-role="page" id="jumpingGame">
+        
+        <!-- =================================== -->
+        <!-- header --> 
+        <div data-role="header" data-theme='b'>
+            <h2>arcade Game program - add</h2>
 
-    //======================================
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                <li><a href="#2048game"> 2048 Game</a></li>
+                 <li><a href="#jumpingGame">Jumping Game</a></li>
+                 <li><a href="#subtract">Rock Paper Scissors Game</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            <div class="game_page">
+                <header><a href="index.html">Jumping Game</a></header>
+                <main class="game">
+                    <div class="game">
+                        <div id="character"></div>
+                        <div id="block">
+                        </div>
+                    </div>
+                </main>
+                <p id="total_score">Score: <span id="scoreSpan"></span></p>
+                <footer>
+                    <button id="jump_action">JUMP!</button>
+                </footer>
+            
+                <script src="jump.js"></script>
+            </div>
+        </div>
+        <!-- =================================== -->
+
+
+        <!-- =================================== -->
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='b'>
+            <p id="credits">This site was created for educational purposes only by someone at <a href="https://www.bellevuecollege.edu">Bellevue College</a></p>
+        </div>
+        <!-- =================================== -->
+    </div>  
+
     <div data-role="page" id="2048game">
 
         <!-- header --> 
@@ -127,67 +174,6 @@
             <p id="credits">This site was created for educational purposes only by someone at <a href="https://www.bellevuecollege.edu">Bellevue College</a></p>
         </div>
         //======================================
-    </div>
-   <!-- ======================================================================================== -->
-
-
-   <!-- ======================================================================================== -->
-    <div data-role="page" id="jumpingGame">
-        
-        <!-- =================================== -->
-        <!-- header --> 
-        <div data-role="header" data-theme='b'>
-            <h2>arcade Game program - add</h2>
-
-            <div data-role="navbar" data-theme='b'>
-                <ul>
-                <li><a href="#2048game"> 2048 Game</a></li>
-                 <li><a href="#jumpingGame">Jumping Game</a></li>
-                 <li><a href="#subtract">Rock Paper Scissors Game</a></li>
-                </ul>
-            </div>
-            <!-- /navbar -->
-   
-        <!-- =================================== -->
-
-        <!-- =================================== -->
-        <!-- content -->
-        <div data-role="content" data-theme='e'>
-            <div class="game_page">
-                <header><a href="index.html">Jumping Game</a></header>
-                <main class="game">
-                    <div class="game">
-                        <div id="character"></div>
-                        <div id="block">
-                        </div>
-                    </div>
-                </main>
-                <p id="total_score">Score: <span id="scoreSpan"></span></p>
-                <footer>
-                    <button id="jump_action">JUMP!</button>
-                </footer>
-            
-                <script src="jump.js"></script>
-            </div>
-        </div>
-        <!-- =================================== -->
-
-
-        <!-- =================================== -->
-        <!-- notes footer --> 
-        <div data-role="footer" data-theme='b'>
-            <p id="credits">This site was created for educational purposes only by someone at <a href="https://www.bellevuecollege.edu">Bellevue College</a></p>
-        </div>
-        <!-- =================================== -->
-    </div>
-     <!-- ======================================================================================== -->
-
-
-    
-      <!-- ======================================================================================== -->
-      //======================================
-     <!-- ======================================================================================== -->
-    
-    
+    </div>  
 </body>
 </html>
