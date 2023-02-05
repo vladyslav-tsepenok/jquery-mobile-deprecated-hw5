@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="jump.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="rps.css">
-    <link rel="stylesheet" href="2048game.css">
-    <title>arcade Game</title>
+    <title>Document</title>
 </head>
 <body>
     <!-- ======================================================================================== -->
@@ -19,14 +18,13 @@
   
         <!-- header --> 
         <div data-role="header" data-theme='a'>
-            <h2>arcade Game program - home</h2>
+            <h2>math program - home</h2>
         
             <div data-role="navbar" data-theme='a'>
                 <ul>
-                <li><a href="#2048game"> 2048 Game</a></li>
-                <li><a href="#jumpingGame">Jumping Game</a></li>
-                <li><a href="#subtract">Rock Paper Scissors Game</a></li>
-                
+                <li><a href="#home">Home Page</a></li>
+                <li><a href="#add">Add Page</a></li>
+                <li><a href="#subtract">Subtract Page</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div>  
@@ -78,43 +76,78 @@
         //======================================
     </div>
 
-    <div data-role="page" id="jumpingGame">
+
+    //======================================
+    <div data-role="page" id="home">
+
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>math program - home</h2>
+        
+            <div data-role="navbar" data-theme='a'>
+                <ul>
+                <li><a href="#home">Home Page</a></li>
+                <li><a href="#add">Add Page</a></li>
+                <li><a href="#subtract">Subtract Page</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>  
+        //======================================
+
+        //======================================
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            Description and code here (line 100 in index.html)
+        </div>
+        //======================================
+
+        //======================================
+          <!-- notes footer --> 
+          <div data-role="footer" data-theme='b'>
+            <p id="credits">This site was created for educational purposes only by someone at <a href="https://www.bellevuecollege.edu">Bellevue College</a></p>
+        </div>
+        //======================================
+    </div>
+   <!-- ======================================================================================== -->
+
+
+   <!-- ======================================================================================== -->
+    <div data-role="page" id="add">
         
         <!-- =================================== -->
         <!-- header --> 
         <div data-role="header" data-theme='b'>
-            <h2>arcade Game program - add</h2>
+            <h2>math program - add</h2>
 
             <div data-role="navbar" data-theme='b'>
                 <ul>
-                <li><a href="#2048game"> 2048 Game</a></li>
-                 <li><a href="#jumpingGame">Jumping Game</a></li>
-                 <li><a href="#subtract">Rock Paper Scissors Game</a></li>
+                 <li><a href="#home">Home Page</a></li>
+                 <li><a href="#add">Add Page</a></li>
+                 <li><a href="#subtract">Subtract Page</a></li>
                 </ul>
+            </div><!-- /navbar -->
+    <div class="game_page">
+        <header><a href="index.html">Jumping Game</a></header>
+        <main class="game"> 
+            <div class="game">
+                <div id="character"></div>
+                <div id="block">
+                </div>
             </div>
-            <!-- /navbar -->
+        </main>
+        <p id="total_score">Score: <span id="scoreSpan"></span></p>
+        <footer>
+            <button id="jump_action">JUMP!</button>
+        </footer>
+
+    <script src="jump.js"></script> 
         </div>
         <!-- =================================== -->
 
         <!-- =================================== -->
         <!-- content -->
         <div data-role="content" data-theme='e'>
-            <div class="game_page">
-                <header><a href="index.html">Jumping Game</a></header>
-                <main class="game">
-                    <div class="game">
-                        <div id="character"></div>
-                        <div id="block">
-                        </div>
-                    </div>
-                </main>
-                <p id="total_score">Score: <span id="scoreSpan"></span></p>
-                <footer>
-                    <button id="jump_action">JUMP!</button>
-                </footer>
             
-                <script src="jump.js"></script>
-            </div>
         </div>
         <!-- =================================== -->
 
@@ -125,55 +158,15 @@
             <p id="credits">This site was created for educational purposes only by someone at <a href="https://www.bellevuecollege.edu">Bellevue College</a></p>
         </div>
         <!-- =================================== -->
-    </div>  
+    </div>
+     <!-- ======================================================================================== -->
 
-    <div data-role="page" id="2048game">
 
-        <!-- header --> 
-        <div data-role="header" data-theme='a'>
-            <h2>arcade Game program - home</h2>
-        
-            <div data-role="navbar" data-theme='a'>
-                <ul>
-                <li><a href="#2048game"> 2048 Game</a></li>
-                <li><a href="#jumpingGame">Jumping Game</a></li>
-                <li><a href="#subtract">Rock Paper Scissors Game</a></li>
-                </ul>
-            </div><!-- /navbar -->
-        </div>  
-        //======================================
-
-        //======================================
-        <!-- content -->
-        <div data-role="content" data-theme='e'>
-        <div class="game_page"></div>
-        <header>
-            <a href="#2048game">
-                2048 Game
-            </a>
-        </header>
-        <main class="game" style="height: 600px;">
-            <div id="page_content">
-                <h1>2048 Game</h1>
-                <hr>
-                <h2>Score: <span id="score">0</span></h2>
-                <div id="board">
-                <div id="victory">
-                <div id="GAME OVER">
-                </div>
-         </div>
-            
-            
-         <script src="2048game.js"></script>
-        </div>
-        //======================================
-
-        //======================================
-          <!-- notes footer --> 
-          <div data-role="footer" data-theme='b'>
-            <p id="credits">This site was created for educational purposes only by someone at <a href="https://www.bellevuecollege.edu">Bellevue College</a></p>
-        </div>
-        //======================================
-    </div>  
+    
+      <!-- ======================================================================================== -->
+      //======================================
+     <!-- ======================================================================================== -->
+    
+    
 </body>
 </html>
