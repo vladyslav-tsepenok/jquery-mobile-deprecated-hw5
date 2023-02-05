@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="jump.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="rps.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="2048game.css">
+    <title>arcade Game</title>
 </head>
 <body>
     <!-- ======================================================================================== -->
@@ -18,13 +19,15 @@
   
         <!-- header --> 
         <div data-role="header" data-theme='a'>
-            <h2>math program - home</h2>
+            <h2>arcade Game program - home</h2>
         
             <div data-role="navbar" data-theme='a'>
                 <ul>
                 <li><a href="#home">Home Page</a></li>
+                <li><a href="2048game"> 2048 Game</a></li>
                 <li><a href="#add">Add Page</a></li>
                 <li><a href="#subtract">Subtract Page</a></li>
+                
                 </ul>
             </div><!-- /navbar -->
         </div>  
@@ -82,11 +85,12 @@
 
         <!-- header --> 
         <div data-role="header" data-theme='a'>
-            <h2>math program - home</h2>
+            <h2>arcade Game program - home</h2>
         
             <div data-role="navbar" data-theme='a'>
                 <ul>
                 <li><a href="#home">Home Page</a></li>
+                <li><a href="2048game"> 2048 Game</a></li>
                 <li><a href="#add">Add Page</a></li>
                 <li><a href="#subtract">Subtract Page</a></li>
                 </ul>
@@ -97,7 +101,22 @@
         //======================================
         <!-- content -->
         <div data-role="content" data-theme='e'>
-            Description and code here (line 100 in index.html)
+            <title>2048 Game</title>
+            <link href="2048game.css" rel="stylesheet" type="text/css" />
+            </head>
+            
+            <body>
+                <h1>2048 Game</h1>
+                <hr>
+                <h2>Score: <span id="score">0</span></h2>
+                <div id="board">
+                    <div id="victory">
+                        <div id="GAME OVER">
+                        </div>
+            
+            
+                        <script src="2048game.js"></script>
+            </body>
         </div>
         //======================================
 
@@ -117,11 +136,12 @@
         <!-- =================================== -->
         <!-- header --> 
         <div data-role="header" data-theme='b'>
-            <h2>math program - add</h2>
+            <h2>arcade Game program - add</h2>
 
             <div data-role="navbar" data-theme='b'>
                 <ul>
                  <li><a href="#home">Home Page</a></li>
+                <li><a href="2048game"> 2048 Game</a></li>
                  <li><a href="#add">Add Page</a></li>
                  <li><a href="#subtract">Subtract Page</a></li>
                 </ul>
